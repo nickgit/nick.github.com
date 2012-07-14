@@ -4,7 +4,9 @@
 	,"version":"0.0.1"
 	,"private":true
 	,"dependencies":{
-		"express":"3.x"
+		"ejs":"x"
+		,"jade":"x"
+		,"express":"3.0.0rc3"
 	}
 
 }
