@@ -1,0 +1,1 @@
+just some testcases from a book named javascript base on mvc!

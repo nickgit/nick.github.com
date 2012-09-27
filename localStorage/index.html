@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Backbone.js Todos</title>
+	<link rel="stylesheet" type="text/css" href="css/todo.css" media="all">
+</head>
+<body>
+	<div id="todo-app">
+		<header>
+			<h1>Todos</h1>
+			<input type="text" id="new-todo" placeHolder="What needs to be done?">
+		</header>
+
+		<section id="main">
+			<input type="checkbox" id="toggle-all">
+			<label for="toggle-all">Mark all as complete</label>
+			<ul id="todo-list"></ul>
+		</section>
+
+		<footer>
+			<a href="" id="clear-complated">clear completed</a>
+			<div id="todo-count"></div>
+		</footer>
+
+	</div>
+
+	<script type="text/javascript" src="./js/jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="./js/underscore-1.3.1.js"></script>
+	<script type="text/javascript" src="./js/json2.js"></script>
+	<script type="text/javascript" src="./js/backbone.js"></script>
+	<script type="text/javascript" src="./js/backbone-localstorage.js"></script>
+	<script type="text/javascript" src="./js/todo.js"></script>
+
+
+   <script type="text/template" id="item-template">
+    <div class="view">
+      <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+      <label><%= title %></label>
+      <a class="destroy"></a>
+    </div>
+    <input class="edit" type="text" value="<%= title %>" />
+  </script>
+
+  <script type="text/template" id="stats-template">
+    <% if (done) { %>
+      <a id="clear-completed">Clear <%= done %> completed <%= done == 1 ? 'item' : 'items' %></a>
+    <% } %>
+    <div class="todo-count"><b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
+  </script>
+</body>
+</html>

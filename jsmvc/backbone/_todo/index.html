@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Todos</title>
+	<link rel="stylesheet" type="text/css" href="./css/screen.css" media="all">
+	<script type="text/javascript" src="js/mootools.js"></script>
+	<script type="text/javascript" src="js/mootools-more.js"></script>
+	<script type="text/javascript" src="js/underscore.js"></script>
+	<script type="text/javascript" src="js/backbone.js"></script>
+	<script type="text/javascript" src="js/backbone.localStorage.js"></script>
+</head>
+<body>
+	<div id="todoapp">
+		<div class="title">
+			<h1>Todos</h1>
+		</div>
+	
+
+		<div class="content">
+			<div id="create-todo">
+				<input type="text" name="" id="new-todo" placeholder="What needs to be done"/>
+				<span class="ui-tooltip-top">Press Enter to create thgis task</span>
+			</div>
+			<div id="todos">
+				<ul id="todo-list"></ul>
+			</div>
+			<div id="todo-stats"></div>
+		</div>
+	</div>
+	<ul id="instructions">
+		<li>Double-click to edit a todo.</li>
+		<li>Click, hold and grag to reorder your todos.</li>
+	</ul>
+	<div id="credits">
+		Created by
+		<br>
+		<a href="http:jgn.me/">&eacute;r&ocirc;me Gravel-Niquet</a>
+	</div>
+	<script type="text/javascript" src="js/todos.js"></script>
+</body>
+</html>

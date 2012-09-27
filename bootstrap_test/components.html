@@ -1,0 +1,559 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstap, form Twitter</title>
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="./assets/css/docs.css">
+	<link href="./assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+	<!-- Navbar
+	============================================ -->
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="" class="btn btn-navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class=""><a href="">Overview</a></li>
+						<li class=""><a href="">Scaffolding</a></li>
+						<li class=""><a href="">Base CSS</a></li>
+						<li class=""><a href="">Components</a></li>
+						<li class=""><a href="">Javascipt plugins</a></li>
+						<li class=""><a href="">Using LESS</a></li>
+						<li class=""><a href=""></a></li>
+						<li class=""><a href="">Cusomize</a></li>
+						<li class=""><a href="">Examples</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		
+		<!-- Button Groups
+		=========================================== -->
+		<section id="buttonGroups">
+			<div class="page-header">
+				<h1>Button groups<small>Join buttons for more toolbar-like functionality</small></h1>
+			</div>
+
+			<div class="row">
+				<div class="span4">
+					<h3>Button groups</h3>
+				</div>
+				<div class="span4">
+					<h3>Default Example</h3>
+					<p>Here's how the HTML looks for a standard button group built with anchor tag buttons:</p>
+					<div class="">
+						<div class="btn-group">
+							<a href="" class="btn">Left</a>
+							<a href="" class="btn">Middle</a>
+							<a href="" class="btn">Right</a>
+						</div>
+					</div>
+
+					<h3>Toolbar example</h3>
+					<p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
+					<div class="btn-toolbar">
+						<div class="btn-group">
+							<a href="" class="btn">1</a>
+							<a href="" class="btn">2</a>
+							<a href="" class="btn">3</a>
+							<a href="" class="btn">4</a>
+						</div>
+						<div class="btn-group">
+							<a href="" class="btn">5</a>
+							<a href="" class="btn">6</a>
+							<a href="" class="btn">7</a>
+						</div>
+						<div class="btn-group">
+							<a href="" class="btn">8</a>
+						</div>
+					</div>
+				</div>
+				<div class="span4">
+					<h3>Checkbox and radio lavors</h3>
+					<p>Button groups can also function as radios, where only one button may be active, or checkboxes, where any number of buttons may be active. View <a href="./javascript.html#buttons">the Javascript docs</a> for that.</p>
+					      <p><a class="btn js-btn" href="./javascript.html#buttons">Get the javascript &raquo;</a></p>
+      <hr>
+      <h4 class="muted">Heads up</h4>
+      <p class="muted">CSS for button groups is in a separate file, button-groups.less.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Nav, Tabs, & Pills
+		================================================= -->
+		<section class="navs">
+			<div class="page-header">
+				<h1>Nav, tabs, adn pills <small>Highly customizable list-style navigation</small></h1>
+			</div>
+
+			<h2>Lightweight default<small>same markup, different classed</small></h2>
+			<div class="row">
+				<div class="span4">
+					<h3>Poerful base class</h3>
+					<p>All nav components here&mdash;tabs, pills, and lists&mdash;<strong>share the same base markup and styles</strong> through the <code>.nav</code> class</p>
+					<h3>When to use</h3>
+					<p>Tabs and pills are great for sections of content or navigating between pages of related content.</p>
+					<h3>Component alignment</h3>
+					<p>To align nav links, use the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction.</p>
+				</div>
+				<div class="span4">
+					<h3>Basic tabs</h3>
+					<p>Take a regular <code>&lt;ul&gt;</code> of links and add <code>.nav-tabs</code>:</p>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="">Profile</a></li>
+						<li><a href="">Messages</a></li>
+					</ul>
+				</div>
+				<div class="span4">
+					<h3>Basic pills</h3>
+					<p>Take that same HTML, but use <code>.nav-pills</code> instead:</p>
+					<ul class="nav nav-pills">
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="">Profile</a></li>
+						<li><a href="">Messages</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<h2>Stackable <small>Make tabs or pills vertical</small></h2>
+			<div class="row">
+				<div class="span4">
+					<h3>How to stack'em</h3>
+					<p>As tabs and pills are horizontal by default, just add a second class, <code>.nav-stacked</code>, to make them appear vertically stacked.</p>
+				</div>
+				<div class="span4">
+					<h3>Stacked tabs</h3>
+					<ul class="nav nav-tabs nav-stacked">
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="">Profile</a></li>
+						<li><a href="">Messages</a></li>
+					</ul>
+				</div>
+				<div class="span4">
+					<h3>Stacked pills</h3>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="">Profile</a></li>
+						<li><a href="">Messages</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+			<h2>Dropdowns<small>For advanced nav components</small></h2>
+			<div class="row">
+				<div class="span4">
+					<h3>Rich menus made easy</h3>
+					<p>Dropdown menus in Bootstrap tabs and pills are super easy and require only a little extra HTML and a lightweight jQuery plugin.</p>
+					<p>Head over to the Javascript page to read the docs on <a href="./javascript.html#tabs">initializing dropdowns</a> in Bootstrap.</p>
+				</div>
+				<div class="span4">
+					<h3>Tabs with dropdowns</h3>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="">Profile</a></li>
+						<li class="dropdown">
+							<a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="">Action</a></li>
+								<li><a href="">Another action</a></li>
+								<li><a href="">Something else here</a></li>
+								<li class="divider"><a href=""></a></li>
+								<li><a href="">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="span4">
+					<h3>Pills with dropdowns</h3>
+					<ul class="nav nav-pills">
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="">Profile</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="">Action</a></li>
+								<li><a href="">Another action</a></li>
+								<li><a href="">Something else here</a></li>
+								<li class="divider"></li>
+								<li><a href="">Separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<h2>Nav lists <small>Build simple stacked navs, great for sidebars</small></h2>
+			<div class="row">
+				<div class="span4">
+					<h3>Application-style navigation</h3>
+				</div>
+				<div class="span4">
+					<h3>Example nav list</h3>
+					<p>Take a list of links and add <code>class="nav nav-list"</code>:</p>
+					<div class="well">
+						<ul class="nav nav-list">
+							<li class="nav-header">List header</li>
+							<li class="active"><a href="">Home</a></li>
+							<li><a href="">Library</a></li>
+							<li><a href="">Application</a></li>
+							<li class="nav-header">Another list header</li>
+							<li><a href="">Profile</a></li>
+							<li><a href="">Settings</a></li>
+							<li><a href="">Help</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="span4">
+					<h3>Example with icons</h3>
+					<p>Same example, but with <code>&lt;i&gt;</code> tags for icons.</p>
+					<div class="well">
+						<ul class="nav nav-list">
+							<li class="nav-header">List header</li>
+							<li class="active"><a href=""><i class="icon-white icon-home"></i>Home</a></li>
+							<li><a href=""><i class="icon-book"></i>Library</a></li>
+							<li><a href=""><i class="icon-pencil"></i>Application</a></li>
+							<li class="nav-header">Another list header</li>
+							<li><a href=""><i class="icon-user"></i>Profile</a></li>
+							<li><a href=""><i class="icon-cog"></i>Settings</a></li>
+							<li><a href=""><i class="icon-flag"></i>Help</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<h2>Tabbable nav<small>Bring tabs to life via javascript</small></h2>
+			<div class="row">
+				<div class="span4">
+					<h3>What's included</h3>
+				</div>
+				<div class="span4">
+					<h3>Tabbable example</h3>
+					<p>To make tabs tabbable, wrap the <code>.nav-tabs</code> in another div with class <code>.tabbable</code>.</p>
+					<div class="tabbable tabs-below">
+						<div class="tab-content">
+							<div class="tab-pane active" id="1">
+								<p>I'm Section 1</p>
+							</div>
+							<div class="tab-pane" id="2">
+								<p>I'm Section 2</p>
+							</div>
+							<div class="tab-pane" id="3">
+								<p>I'm Section 3</p>
+							</div>
+						</div>
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#1" data-toggle="tab">Section 1</a></li>
+							<li><a href="#2" data-toggle="tab">Section 2</a></li>
+							<li><a href="#3" data-toggle="tab">Section 3</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="span4">
+					<h3></h3>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Navbar
+		================================================= -->
+		<section id="navbar">
+			<div class="page-header">
+				<h1>Navbar</h1>
+			</div>
+			<h2>Static navbar example</h2>
+			<p>An example of a static (not fixed to the top) navbar with project name, navigation, and search form.</p>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container" style="width: auto;">
+						<a href="" class="btn btn-navbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<a href="" class="brand">Project name</a>
+						<div class="nav-collapse">
+							<ul class="nav">
+								<li class="active"><a href="">Home</a></li>
+								<li><a href="">Link</a></li>
+								<li><a href="">Link</a></li>
+								<li><a href="">Link</a></li>
+								<li class="dropdown">
+									<a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="">Action</a></li>
+										<li><a href="">Another action</a></li>
+										<li><a href="">Something else here</a></li>
+										<li class="divider"></li>
+										<li class="nav-header">Nav header</li>
+										<li><a href="">Separated link</a></li>
+										<li><a href="">One more separated link</a></li>
+									</ul>
+
+								</li>
+							</ul>
+							<form action="" class="navbar-search pull-left"><input type="text" name="" id="" class="search-query span2" placeholder="Search"></form>
+							<ul class="nav pull-right">
+								<li>
+									<a href="">Link</a>
+								</li>
+								<li class="divider-vertical"></li>
+								<li class="dropdown">
+									<a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Action</a></li>
+										<li><a href="">Another action</a></li>
+										<li><a href="">Something else here</a></li>
+										<li class="divider"></li>
+										<li><a href="">Separated link</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Pagination
+		======================================== -->
+		<section id="pagination">
+			<div class="page-header">
+				<h1>Paggination<small>Two options for paging through content</small></h1>
+			</div>
+
+			<h2>Multicon-page paginantion</h2>
+			<div class="row">
+				<div class="span4">
+					<h3>When to use</h3>
+				</div>
+				<div class="span4">
+					<h3>Examples</h3>
+					<p>The default pagination component is flexible and works in a number of variarions.</p>
+					<div class="pagination">
+						<ul>
+							<li class="disabled"><a href="">&laquo;</a></li>
+							<li class="active"><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">&raquo;</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="span4">
+					<h3></h3>
+				</div>
+			</div>
+
+			<h2>Pager <small>For quick previous and next links</small></h2>
+			<div class="row">
+				<div class="span4">
+					<h3>About pager</h3>
+					<p>The pager component is a set of links for simple pagination implementations with light markup and even lighter styles. It's great for simple sites like blogs or magazines.</p>
+				</div>
+				<div class="span4">
+					<h3>Default example</h3>
+					<p>By default, the pager centers links.</p>
+					<ul class="pager">
+						<li><a href="">Previous</a></li>
+						<li><a href="">Next</a></li>
+					</ul>
+				</div>
+				<div class="span4">
+					<h3>Aligined links</h3>
+					<p>Alternatively, you can align each link to the sides;</p>
+					<ul class="pager">
+						<li class="previous"><a href="">&larr; Older</a></li>
+						<li class="next"><a href="">Newer &rarr;</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!--
+		======================================= -->
+		<section id="labels">
+			<div class="page-header">
+				<h1>Inline labels <small>Label and annotate text</small></h1>
+			</div>
+
+			<table class="table table-bordered table-triped">
+				<thead>
+					<tr>
+						<th>Labels</th>
+						<th>Markup</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<span class="label">Default</span>
+						</td>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="label label-success">Success</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<span class="label label-warning">Warning</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<span class="label label-important">Important</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<span class="label label-info">Info</span>
+						</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+
+		<!-- Thumbails
+		=========================================== -->
+		<section id="thumbails">
+			<div class="page-header">
+				<h1>Thumbnails <small>Grids of images, video, text, and more</small></h1>
+			</div>
+
+			<div class="row">
+				<div class="span6">
+					<h2>Default thumbails</h2>
+					<p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
+					<ul class="thumbnails">
+								<li class="span3"><a href="" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a></li>
+								<li class="span3"><a href="" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a></li>
+								<li class="span3"><a href="" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a></li>
+								<li class="span3"><a href="" class="thumbnail"><img src="http://placehold.it/260x180" alt=""></a></li>
+							</ul>		
+				</div>
+				<div class="span6">
+					<h2>Highly customizable</h2>
+					<p>With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.</p>
+				     <ul class="thumbnails">
+				     	<li class="span3">
+				     		<div class="thumbnail">
+				     			<img src="http://placehold.it/260x180" alt="">
+				     			<div class="caption">
+				     				<h5>Thumbnail label</h5>
+				     				<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				     				<p><a href="" class="btn btn-primary">Action</a> <a href="" class="btn">Action</a></p>
+				     			</div>
+				     		</div>
+				     	</li>
+				     	<li class="span3">
+				     		<div class="thumbnail">
+				     			<img src="http://placehold.it/260x180" alt="">
+				     			<div class="caption">
+				     				<h5>Thumbnail label</h5>
+				     				<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				     				<p><a href="" class="btn btn-primary">Action</a> <a href="" class="btn">Action</a></p>
+				     			</div>
+				     		</div>
+				     	</li>
+				     </ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="span6">
+					<h2>More examples</h2>
+					<p>Explore all your options with the various grid classes available to you. You can also mix and match different sizes.</p>
+					<ul class="thumbnails">
+						<li class="span4"><a href="" class="thumbnail"><img src="http://placehold.it/360x268" alt=""></a></li>
+						<li class="span2"><a href="" class="thumbnail"><img src="http://placehold.it/160x120" alt=""></a></li>
+						<li class="span2"><a href="" class="thumbnail"><img src="http://placehold.it/160x120" alt=""></a></li>
+						<li class="span2"><a href="" class="thumbnail"><img src="http://placehold.it/160x120" alt=""></a></li>
+						<li class="span2"><a href="" class="thumbnail"><img src="http://placehold.it/160x120" alt=""></a></li>
+						<li class="span2"><a href="" class="thumbnail"><img src="http://placehold.it/160x120" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<!---- Process bars
+		========================================= -->
+		<section class="process">
+			<div class="page-header">
+				<h1>Process bars <small>For loading, redirecting, or action status</small></h1>
+			</div>
+
+			<h2>Examples and markup</h2>
+			<div class="row">
+				<div class="span4">
+					<h3>Basic</h3>
+					<p>Default progress bar with a vertical gradient.</p>
+					<div class="progress">
+						<div class="bar" style="width:40%"></div>
+					</div>
+				</div>
+				<div class="span4">
+					<h3>Striped</h3>
+					<p>Uses a gradient to create a striped effect.</p>
+					<div class="progress progress-info progress-striped">
+						<div class="bar" style="width:60%"></div>
+					</div>
+				</div>
+				<div class="span4">
+					<h3>Animated</h3>
+					<p>Takes the striped example and animates it.</p>
+					<div class="progress progress-success progress-striped active">
+						<div class="bar" style="width:70%"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer"></footer>
+
+			<!-- Le javascript
+	============================================= -->
+	<!-- Place at the end of the document so the pages load faster -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+
+	</div>
+
+
+
+
+
+	
+</body>
+</html>
